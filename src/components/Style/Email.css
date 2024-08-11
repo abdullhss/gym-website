@@ -1,0 +1,61 @@
+.EmailSection{
+    display: flex;
+    gap: 10rem;
+    padding: 0 2rem ;
+}
+.EmailleftSection{
+    display: flex;
+    flex: 2 1;
+    flex-direction: column;
+    gap: 1rem;
+}
+.EmailleftSection hr{
+    width: 10rem;
+    border: 2px solid orange;
+    border-radius: 20%;
+}
+.EmailleftSection span{
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.EmailRightSection{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.EmailSection form{
+    display: flex;
+    gap: 3rem;
+    padding: 1rem 2rem ;
+    background-color: var(--gray);
+}
+.EmailSection form input{
+    padding: 0 1.5rem;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: var(--lightgray);
+}
+.EmailSection form input::placeholder{
+    color:var(--lightgray);
+}
+.EmailSection form .btn{
+    background-color: var(--orange);
+    color: white;
+    padding: 1rem;
+    border: none;
+    outline: none;
+}
+@media screen and (max-width:768px){
+    .EmailSection{
+        flex-direction: column;
+        gap: 1rem;
+    }
+    .EmailleftSection{
+        font-size: x-large;
+    }
+    .EmailSection form{
+        padding: 0.5rem;
+    }
+}

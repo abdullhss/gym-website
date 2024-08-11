@@ -1,0 +1,43 @@
+.PlansHeader{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 3rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: white;
+    font-style: italic;
+    margin-bottom: 4rem;
+}
+.PlanCardContaner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+.blurPlan{
+    width: 20rem;
+    height: 30rem;
+    right: 70%;
+}
+.blurPlan2{
+    width: 20rem;
+    height: 30rem;
+    left: 70%;
+}
+@media screen and (max-width:768px){
+    .PlansHeader{
+        flex-direction: column;
+        font-size: xx-large;
+        gap: 2rem;
+    }
+    .PlanCardContaner{
+        flex-direction: column;
+    }
+    .blurPlan{
+        display: none;
+    }
+    .blurPlan2{
+        display: none;
+    }
+}

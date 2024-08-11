@@ -1,0 +1,239 @@
+.Hero{
+    display: flex;
+    justify-content: space-between;
+}
+.leftSide{
+    padding: 2rem;
+    padding-top: 1.5rem;
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.rightSide{
+    flex:1;
+    position: relative;
+    background-color: var(--orange);
+}
+.ad{
+    margin-top: 4rem;
+    background-color: #363d42;
+    width: fit-content;
+    padding: 20px 13px;
+    border-radius: 4rem;
+    color: white;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.ad span{
+    z-index: 1;
+}
+.orangeSlider{
+    position: absolute;
+    left: 8px;
+    width: 5.4rem;
+    height:80%;
+    background-color: var(--orange);
+    border-radius: 3rem;
+    animation: slide 5s infinite;
+}
+@keyframes slide{
+    0%{
+        transform: translate(0%);
+    }
+    50%{
+        transform: translate(250%);
+    }
+    100%{
+        transform: translate(0%);
+    }
+}
+
+.heroText{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    color: white;
+    font-size: 4.5rem;
+    font-weight: bold;
+    text-overflow: inherit;
+}
+.pargraph{
+    font-size: 1rem;
+    font-weight: 200;
+    text-transform: none;
+    letter-spacing: 1px;
+    width: 80%;
+}
+.counters{
+    display:flex;
+    gap: 2rem;
+}
+.btnsContaner{
+    display: flex;
+    gap: 1rem;
+    font-weight: normal;
+}
+.btnsContaner>:nth-child(1){
+    color: white;
+    background-color: var(--orange);
+    width: 8rem;
+}
+.btnsContaner>:nth-child(2){
+    color: white;
+    background-color: transparent;
+    width: 8rem;
+    border: 2px solid var(--orange);
+}
+.rightSide>.btn{
+    position: absolute;
+    right: 3rem;
+    top: 2rem;
+    color: black;
+}
+.heartRate{
+    background-color: var(--darkGrey);
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: fit-content;
+    padding: 1rem;
+    align-items: start;
+    border-radius: 5px;
+    position: absolute;
+    right: 4rem;
+    top: 7rem;
+}
+.heartRate img{
+    width: 2rem;
+}
+.heartRate>span:nth-of-type(1){
+    color:var(--gray);
+
+}
+.heartRate>span:nth-of-type(2){
+    color:white;
+    font-size: 1.5rem;
+}
+#HeroImage{
+    position: absolute;
+    width: 23rem;
+    top: 10rem;
+    right: 8rem;
+    z-index: 1;
+}
+#HeroImageBack{
+    position: absolute;
+    width: 15rem;
+    top: 4rem;
+    right: 20rem;
+}
+.calIsBurning{
+    width: fit-content;
+    background-color:var(--caloryCard);
+    position: absolute;
+    top: 32rem;
+    right: 28rem;
+    display: flex;
+    gap: 2rem;
+    border-radius: 5px;
+    padding: 1rem;
+}
+.calIsBurning img{
+    width: 3rem;
+}
+.calIsBurning .spans{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.spans span:nth-of-type(1){
+    color: var(--gray);
+}
+
+.spans span:nth-of-type(2){
+    color: white;
+    text-wrap: nowrap;
+}
+.heroBlur{
+    width: 22rem;
+    height: 30rem;
+    left: 0;
+}
+@media screen and (max-width:768px){
+    @keyframes slide{
+        0%{
+            transform: translate(0%);
+        }
+        50%{
+            transform: translate(200%);
+        }
+        100%{
+            transform: translate(0%);
+        }
+    }
+    .Hero{
+        flex-direction: column;
+    }
+    .heroBlur{
+        width: 14rem;
+    }
+    .ad{
+        margin-top: 0;
+        font-size: small;
+        align-self: center;
+        transform: scale(0.8);
+    }
+    .heroText{
+        font-size: xx-large;
+        align-items: center;
+        justify-content: center;
+    }
+    .pargraph{
+        font-size: small;
+        font-weight: 200;
+        letter-spacing: 1px;
+        text-align: center;
+    }
+    .btnsContaner{
+        align-items: center;
+        justify-content: center;
+    }
+    .counters{
+        align-items: center;
+        justify-content: center;
+        font-size: small;
+    }
+    .rightSide{
+        background:none ;
+    }
+    .heartRate{
+        left: 1rem;
+        top: 2rem;
+    }
+    .calIsBurning{
+        position: relative;
+        top: 5rem;
+        left: 2rem;
+        font-size: 1rem;
+    }
+    .calIsBurning img{
+        width: 2rem;
+    }
+    #HeroImage{
+        position: relative;
+        width: 15rem;
+        left: 7rem;
+        top:4rem;
+        align-self: center;
+    }
+    #HeroImageBack{
+        width: 13rem; 
+        left: 2rem;
+        top:0;
+        z-index: -1;
+    }
+}

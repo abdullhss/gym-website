@@ -1,0 +1,34 @@
+.footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    gap: 2rem;
+}
+.footerSocial{
+    display: flex;
+    gap: 2rem;
+}
+.footerSocial img{
+    width: 3rem;
+}
+.footerLogo{
+    width: 13rem;
+    margin-bottom: 2rem;
+}
+.footerBlur{
+    width: 25rem;
+    height: 22rem;
+    left: 20rem;
+}
+.footerBlur2{
+    position: absolute;
+    background-color: rgba(255, 0, 0, 0.705);
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    right: 20rem;
+    filter: blur(150px);
+    z-index: -100;
+}

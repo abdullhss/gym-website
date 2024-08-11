@@ -1,0 +1,47 @@
+.PlanCard{
+    background-color: var(--caloryCard);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1.5rem;
+}
+#idIs1{
+    background :var(--planCard);
+    transform: scale(1.1);
+}
+svg{
+    fill: var(--orange);
+    width: 2rem;
+    height: 2rem;
+}
+#idIs1 svg{
+    fill: white;
+}
+#idIs1 .btn{
+    color: orange;
+}
+.PlanCard h1{
+    font-size: 1rem;
+    font-weight: bold;
+}
+.price{
+    font-size: 3rem;
+    font-weight: bold;
+}
+.features{
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+.feature{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.feature img{
+    width: 1rem;
+}
+.SeeMore{
+    font-size: 0.8rem;
+}

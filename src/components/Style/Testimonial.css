@@ -1,0 +1,110 @@
+.testimonial{
+    display: flex;
+    gap: 2rem;
+    padding: 0rem 2rem;
+}
+.testimonial h4{
+    color: var(--orange);
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.testimonial h3 , .testimonial h2{
+    text-transform: uppercase;
+    font-size: 3rem;
+    font-weight: bold;
+    color: white;
+}
+.leftSideTestimonial{
+    display: flex;
+    flex: 1 1;
+    flex-direction: column;
+    gap: 2rem;
+}
+.leftSideTestimonial p {
+    color: white;
+    font-size: 1.3rem;
+}
+.leftSideTestimonial span{
+    color: var(--orange);
+    text-align: justify;
+    letter-spacing: 2px;
+    line-height: 40px;
+}
+.leftSideTestimonial .status{
+    color: white;
+}
+.RightSideTestmonial{
+    flex: 1;
+    position: relative;
+}
+.TestmonisalImage{
+    position: absolute;
+    width: 17rem;
+    height: 20rem;
+    object-fit: cover;
+    right: 8rem;
+    top: 2rem;
+}
+.TestmonisalImageBackGroundOutline{
+    position: absolute;
+    width: 17rem;
+    height: 20rem;
+    object-fit: cover;
+    right: 9rem;
+    top: 0.9rem;
+    border: 2px solid var(--orange);
+}
+.TestmonisalImageBackGroundsolid{
+    position: absolute;
+    width: 17rem;
+    height: 20rem;
+    object-fit: cover;
+    right: 7rem;
+    top: 4rem;
+    background: var(--planCard);
+}
+.Arrows{
+    display: flex;
+    gap: 1rem;
+    position: absolute;
+    bottom: 1rem;
+    left: 3rem;
+}
+.Arrows img{
+    width: 1.5rem;
+    cursor: pointer;
+}
+.testimonial h3 {
+    color: transparent;
+}
+@media screen and (max-width:768px){
+    .testimonial{
+        flex-direction: column;
+    }
+    .testimonial h3 , .testimonial h2{
+        font-size: xx-large;
+    }
+    .RightSideTestmonial{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+    .TestmonisalImageBackGroundOutline , .TestmonisalImageBackGroundsolid{
+        display: none;
+    }
+    .RightSideTestmonial img{
+        top:0;
+        right: 0;
+        position: relative;
+        align-self: center;
+    }
+    .Arrows{
+        display: flex;
+        left: 50%;
+        top: 110%;
+        transform: translate(-50%);
+    }
+}

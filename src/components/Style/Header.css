@@ -1,0 +1,59 @@
+#logo{
+    width: 10rem;
+    height: 3rem;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header .BurgerIcnoe{
+    display: none;
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+li {
+    list-style: none;
+}
+
+a{    
+    color: white;
+    text-decoration: none;
+}
+
+a:hover{
+    color: var(--orange);
+}
+@media screen and (max-width:768px){
+    ul{
+        position: fixed;
+        right: 2rem;
+        top: 5%;
+        z-index: 99;
+        flex-direction: column;
+        background-color: var(--appColor);
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        
+    }
+    li{
+        margin: 1rem 0px ;
+    }
+    header .BurgerIcnoe{
+        display: block;
+        width: 2rem;
+        height: 1.5rem;
+        justify-content: center;
+        align-items: center;
+        object-fit: cover;
+    }
+    .burgerIconeContaner{
+        background-color: var(--appColor);
+        padding: 10px;
+        border-radius: 10px;
+    }
+}

@@ -1,0 +1,12 @@
+.counterBox{
+    display: flex;
+    flex-direction: column;
+}
+.number{
+    font-size: 2rem;
+    color: white;
+}
+.title{
+    color: var(--gray);
+    text-transform: uppercase;
+}
